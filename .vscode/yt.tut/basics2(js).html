@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>twinkle</p>
+    <script>
+        let employee={
+            name:"harry",
+            age:30,
+            channel:"CodeWithHarry",
+            channel2:"ProgrammingWithHarry"
+        }
+        console.log(employee);
+        console.log(employee.channel);
+        let names=[10,22,6,"twinkle",undefined];
+        names.sort((a,b)=>a-b);
+        console.log(names);
+        let fruits=["mango","litchi","pineapple","apple","banana"];
+        fruits.sort();
+        console.log(fruits);
+        // for loop
+        for(let i=1;i<=5;i++){
+            for(let j=1;j<=i;j++){
+                console.log(j);
+            }
+            console.log('\n');
+        }
+        for(let i=0;i<fruits.length;i++){
+            console.log("hello fruits "+fruits[i]);
+        }
+        //for each
+        fruits.forEach(function(element){
+            console.log("hello fruits "+element);
+        });
+        //for of
+        let friends=["zubia","tiya","yashi","shagun","bhavi"];
+        friends.forEach(function(element){
+            console.log("hello friends "+element);
+        });
+        for(elements of fruits){
+            console.log("hello fruits "+elements);
+        }
+        //for in
+        let student ={
+             name:"twinkle",
+             branch:"CSE",
+             roll_no:240101143
+        }
+        for(element in student){
+               console.log(`the ${element} of student is ${student[element]}`);
+        }
+    </script>
+</body>
+</html>

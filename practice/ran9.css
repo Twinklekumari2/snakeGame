@@ -1,0 +1,9 @@
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(5,300px);
+    grid-gap: 0px;
+}
+.box{
+    border : solid black 2px;
+    
+}

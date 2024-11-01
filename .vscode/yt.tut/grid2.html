@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid css</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+        /* grid-template-columns: repeat(autofill,minmax(300px,1fr)); */
+        /* grid-template-columns: 3fr 4fr 5fr; */
+        grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section aside aside2'
+        ;
+    }
+
+    .item{
+        background-color: yellow;
+        border: solid black 1px;
+    }
+    span{
+        display: block;
+        text-align: center;
+    }
+    #section{
+        grid-area: section;
+        display: grid;
+        grid-template-columns:400px 400px;
+        grid-gap: 2px;
+        padding: 23px;
+    }
+    #navbar{
+        grid-area: navbar;
+        padding: 23px;
+    }
+    #navbar:hover{
+        background-color: palevioletred;
+    }
+    #aside{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2px;
+        grid-area: aside;
+        padding: 23px;
+    }
+    #aside2{
+        grid-area: aside2;
+        padding: 23px;
+    }
+    .bdr{
+        background-color: purple;
+        border: 1px paleturquoise solid;
+    }
+    @media only screen and (max-width:200px){
+        body{
+            background-color: blue;
+
+        }
+        .container{
+            grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section section'
+        ;
+        }
+        #aside ,#aside2{
+            display: none;
+        }
+    }
+    @media only screen and (min-width:200px) and (max-width:500px){
+        body{
+            background-color: red;
+
+        } 
+        .container{
+            grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section aside aside'
+        ;
+        span{
+            display: block;
+            text-align: center;
+        }
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+        #aside2{
+        display: none;
+        }
+    }
+    @media only screen and (min-width:500px) and (max-width:800px){
+        body{
+            background-color: orange;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+    @media only screen and (min-width:800px) and (max-width:1000px){
+        body{
+            background-color: greenyellow;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="navbar" class="bdr">
+            <span>home</span><span>contact</span><span>about</span><span>more</span>
+        </div>
+        <div id="section" class="bdr">
+            <div class="item">item-1
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae amet nihil aliquid totam deleniti in maxime harum iure velit pariatur eveniet dicta, animi eligendi sint alias, adipisci, voluptatum quas aut.
+            </div>
+            <div class="item">item-2</div>
+            <!-- <div class="item">item-3</div>
+            <div class="item">item-4</div> -->
+        </div>
+        <div id="aside" class="bdr">
+            <div class="item">item-5</div>
+            <div class="item">item-6</div>
+            <div class="item">item-7</div>
+            <div class="item">item-8</div>
+            <div class="item">item-9</div>
+        </div>
+        <div id="aside2" class="bdr">
+            <div class="item">item-10</div>
+            <div class="item">item-11</div>
+            <div class="item">item-12</div>
+        </div>
+    </div>
+</body>
+</html>

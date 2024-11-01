@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <link rel="stylesheet" href="ran2.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">Instagram </h1>
+        <form action="backend.php" method="post">
+            <div class="input">
+                <label for="username" class="label">username:</label>
+                <input type="text number" id="username" placeholder="enter email or username"> 
+                <label for="password" class="label">password: </label>
+                <input type=" text number" id="password" placeholder="enter password">
+                <input type="submit" name="submit">
+            </div>
+           
+                <p class="paragraph">forgetten password?</p>
+        </form>
+        <hr>
+        <h4> or</h4>
+        <div class="btn">
+            <button id="google">
+                <a class="link" href="https://www.google.com">login through google</a>
+            </button> <br>
+            <button id="facebook">
+                <a class="link" href="https://www.facebook.com">login through facebook</a>
+            </button>
+        </div>
+        <p class="paragraph"> Don't have any account? </p>
+        <button class="btn">
+            <a href="#">Sign up</a>
+        </button>
+    </div>
+    <script>
+        let heading=document.getElementById('heading');
+        console.log(heading);
+    </script>
+</body>
+</html>

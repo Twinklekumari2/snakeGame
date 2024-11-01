@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main" class="container">
+          <ul id="nav">
+            <li>home</li>
+            <li>about</li>
+            <li>services</li>
+            <li>about</li>
+            <li>contact us</li>
+          </ul>
+    </div>
+    <script>
+        let main=document.getElementById('main');
+        console.log(main);
+        let sel=document.querySelector('.container'); //isse jo bhi pehli class hogi container wali voh select ho jayegi
+        console.log(sel);
+        let sel1= document.querySelectorAll('.container li');
+            console.log(sel1);
+        let sel2=document.querySelector('#nav>li')
+        console.log(sel2);
+        let container=document.getElementsByClassName('container');
+        console.log(container);
+        
+    </script>
+</body>
+</html>

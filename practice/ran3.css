@@ -1,0 +1,335 @@
+*{
+    /* background-image: url(http://cdn.wallpapersafari.com/27/79/IWqaie.jpg); */
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+html,body{
+    animation: background 15s ease-in-out 0s infinite forwards alternate;
+    background-repeat: repeat;
+    background-size: cover;
+}
+@keyframes background{
+    0%{
+        background-image: url(http://cdn.wallpapersafari.com/27/79/IWqaie.jpg);
+    }
+    25%{
+        background-image: url(https://images.hdqwalls.com/download/mountain-scenery-morning-sun-rays-4k-kf-1280x800.jpg);
+    }
+    50%{
+        background-image: url(https://wallpaperaccess.com/full/2763924.jpg);
+    }
+    70%{
+        background-image: url(https://images5.alphacoders.com/397/thumb-1920-397914.jpg);
+    }
+    100%{
+        background-image: url(http://wallup.net/wp-content/uploads/2016/01/107630-Yosemite_National_Park-nature-mountain-trees-mist.jpg);
+    }
+}
+
+/* .logo img{
+   
+    mix-blend-mode: color-burn;
+    width: 30px;
+    height: 30px;
+    background: none;
+} */
+
+.logo{
+    background-color: white;
+    position: absolute;
+    left: 35px;
+    top: 25px;
+    font-weight: 400;
+    font-style: oblique;
+    /* width: 24Vw; */
+    /* text-align: center; */
+    width: 7vw;
+    height: 3vh; 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 7px;
+
+
+}
+
+
+.navigation{
+    width: 70vw;
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    background: transparent;
+    /* backdrop-filter: blur(20px); */
+}
+
+
+.navigation ul{
+    display: flex;
+}
+
+
+.navigation li{
+    /* display: flex; */
+    /* justify-content: space-around; */
+    margin: 5px 15px;
+    padding: 10px;
+    list-style: none;
+    background: none;
+   
+}
+
+
+.navigation a{
+    text-decoration: none;
+
+}
+
+
+li:hover ,#MOUNTAINING{
+    background-color: whitesmoke;
+    color: rgb(233, 24, 24);
+    transition: all 1.5s ease-in-out;
+    border-radius: 30px;
+}
+
+
+.mountain{
+    background: none;
+    /* border: 1px solid black; */
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    top: 28vh;
+    left: 35px;
+    display: inline;
+}
+
+
+#heading{
+    background: none;
+    font-family: cursive;
+    font-size: xxx-large;
+    font-style: italic;
+    color: aliceblue;
+}
+#sub-heading{
+    background: none;
+    padding: 0px;
+    margin: 0px;
+    font-style: italic;
+    font-size: xx-large;
+    color: aliceblue;
+}
+.btn{
+    position:absolute;
+    top: 130px;
+    left: 0px;
+    width: 15vw;
+    border: 2.5px white solid;
+    background: none;
+    color: white;
+    border-radius: 25px;
+    padding: 5px;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    transition: all 3s ease;
+}
+.content{
+    background: transparent;
+    backdrop-filter: blur(20px);
+    position: absolute;
+    top: 190px;
+    left: 0px;
+    color: lightcoral;
+    
+}
+#sub2-heading{
+    font-size: x-large;
+}
+#sub2-heading , p{
+    background: none;
+    /* color: rgb(0, 0, 0); */
+    
+}
+
+.aside{
+     /* border: 1px black solid; */
+     background: none;
+     position: absolute;
+     top: 160px;
+     right: 70px;
+     height: 40px;
+     width: 40vw;
+    }
+.photogrid{
+    display: grid;
+    overflow-y: scroll;
+    scrollbar-width:none;
+    grid-template-columns: 157px 157px 156px ;
+    grid-gap: 3px;
+    position: absolute;
+    top: 210px;
+    right: 70px;
+    width: 40vw;
+    height: 400px;
+}
+.photobox{
+    margin: 2px;
+    /* border: 1px rgb(0, 0, 0) solid; */
+    height: 100px;
+    /* z-index: -111; */
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+    /* position: fixed; */
+}
+.photobox:hover{
+    width: 190px;
+    height: 120px;
+    /* position: fixed; */
+    z-index: 233;
+    /* transition: all 1s ease; */
+    border: 2px solid black;
+    box-shadow: 3px 3px 4px rgb(255, 238, 0);
+}
+
+.aside input{
+    background: black;
+    border: 2.5px rgb(0, 0, 0) solid;
+    width: 30vw;
+    border-radius: 25px;
+    padding: 10px;
+    cursor: pointer;
+    position:sticky;
+    color: black;
+    font-size: large;
+}
+/* .aside i{
+    position: absolute;
+    top: 10.5px;
+    left: 15px;
+    color: rgb(0, 0, 0);
+    background: none;
+    z-index: -11;
+} */
+/* #para{
+    margin-top: 40px;
+    color: white;
+    z-index: 10;
+} */
+#photo-1{
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.ZUD5G_BXy7TqdPAu6RVRSgHaEo&pid=Api&P=0&h=220);
+    /* width: 160px;
+    height: 100px; */
+}
+#photo-2{
+    background-image: url(https://c.pxhere.com/photos/5f/d0/countryside_field_flora_flowers_grass_grassland_idyllic_landscape-1365139.jpg!d);
+    /* width: 160px;
+    height: 100px; */
+}
+#photo-3{
+    background-image: url(https://i.pinimg.com/originals/6c/6b/87/6c6b873bc5040089a84bd5cba39a5a5b.jpg);
+    /* width: 160px;
+    height: 100px; */
+}
+#photo-4{
+    background-image: url(https://fromthehipphoto.com/focus/wp-content/uploads/2021/01/003-From-The-Hip-Photo-22.jpg);
+    /* width: 160px;
+    height: 100px; */
+}
+#photo-5{
+    background-image: url(https://c2.staticflickr.com/4/3387/3431335548_d81b9a3310_b.jpg);
+    /* width: 160px;
+    height: 100px; */
+}
+#photo-6{
+    background-image: url(https://a-z-animals.com/media/2022/04/shutterstock_1108239680.jpg);
+    /* width: 160px;
+    height: 100px; */
+}
+#photo-7{
+    background-image: url(https://cdn.wallpapersafari.com/14/48/l71bKk.jpg);
+    /* width: 160px;
+    height: 100px; */
+}
+#photo-8{
+    background-image: url(https://cdn.cdnparenting.com/articles/2018/08/213950941-H-1024x700.jpg);
+    /* width: 160px;
+    height: 100px; */
+}
+#photo-9{
+    background-image: url(https://cdn.wallpapersafari.com/76/41/TDwR8U.jpg);
+    /* width: 160px;
+    height: 100px; */
+}
+#photo-10{
+    background-image: url(https://tse4.mm.bing.net/th?id=OIP.xWRVlq5231j_ALV1_VxIagHaEc&pid=Api&P=0&h=220);
+    /* width: 160px;
+    height: 100px; */
+}
+#photo-11{
+    background-image: url(https://cdn.wallpapersafari.com/90/96/a0jGrF.jpg);
+    /* width: 160px;
+    height: 100px; */
+}
+#photo-12{
+    background-image: url(https://www.momtrends.com/.image/t_share/MTc5MzQyNjY3NDA5MjcwNDIz/ski-okemo-mountain.jpg);
+    /* width: 160px;
+    height: 100px; */
+}
+#photo-13{
+    background-image: url(https://skinorthamerica100.com/wp-content/uploads/2020/03/DSC00356.jpg);
+    /* width: 160px;
+    height: 100px; */
+}
+#photo-14{
+    background-image: url(https://www.snowmonkeyresorts.com/wp-content/uploads/2020/03/d9a4d8ab020284c3d5c6559e18d6a8fe_m.jpg);
+    /* width: 160px;
+    height: 100px; */
+}
+#photo-15{
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20231104/pngtree-beautiful-variety-of-stone-layers-with-diverse-colors-and-textures-adorning-image_13769084.png);
+    /* width: 160px;
+    height: 100px; */
+}
+
+@media only screen and (max-width : 650px){
+    .mountain{
+        display: block;
+        position: absolute;
+        left: 2%;
+    }
+     /* .navigation{ */
+        /* display: none; */
+        /* position: absolute;
+        top: 2%;
+        right: 0%;
+    }  */
+    /* .navigation li{
+        float: right;
+        
+    } */
+    .photogrid{
+        position: absolute;
+        top: 80%;
+        left: 0%;
+    }
+    .aside{
+        position: absolute;
+        top: 75%;
+        left: 0%;
+    }
+    .btn{
+        width: 40vw;
+    }
+    html,body{
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
+    
+    
+}

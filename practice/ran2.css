@@ -1,0 +1,103 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Sevillana&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Sevillana&display=swap');
+body{
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.u2VOKL0BufJGdwMmJqA42gHaEK&pid=Api&P=0&h=220);
+    /* background-image:url(https://tse1.mm.bing.net/th?id=OIP.oOZzxOAaAO0WTLC0uKMFDAHaEo&pid=Api&P=0&h=220) ; */
+    background-size: cover;
+    background-position: 50%;
+}
+.container{
+    border-style: solid;
+    border-width: 3px;
+    display: block;
+    width: 20%;
+    margin: auto;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20vh;
+    border-radius: 5px;
+}
+#heading{
+    /* .cedarville-cursive-regular { */
+        /* font-family: "Cedarville Cursive", cursive;
+        font-weight: 400;
+        font-style: normal; */
+        /* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700 */
+
+/* .dancing-script-<uniquifier> { */
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  /* font-weight: weight>; */
+  font-style: normal;
+  /* font-size: x-large; */
+}
+.input{
+    justify-content: center;
+    text-align: center;
+    font-style: oblique;
+    /* display: block; */
+    /* border-radius: 4px; */
+    /* border-style: solid; */
+    /* border-width: 1px; */
+    /* margin-left: 30px; */
+}
+input{
+    display: block;
+}
+.container label{
+    overflow: auto;
+}
+.label{
+    margin-left: 9px;
+    text-align: left;
+}
+#username{
+    /* margin-left: 10px; */
+    border-radius: 4px;
+    font-style: normal;
+    cursor: pointer;
+}
+#password{
+    border-radius: 4px;
+    font-style: normal;
+    cursor: pointer; 
+}      
+.paragraph:hover{
+    color: rgb(25, 25, 240);
+    cursor: pointer;
+}
+.btn{
+    padding: 5px;
+    border-style: hidden;
+    color: azure;
+    border-radius: 5px;
+}
+ #google{
+    padding: 5px;
+    margin: 3px;
+    border-radius: 5px;
+    text-decoration: none;
+    /* background-color: rgb(213, 134, 14); */
+ }
+ #facebook{
+    padding: 5px;
+    margin:1px ;
+    text-decoration: none;
+    border-radius: 5px;
+ }
+ a:active{
+    text-decoration: none;
+    background-color: lightsalmon;
+ }
+ .link:hover{
+    background-color: lightseagreen;
+    color: rgb(2, 2, 2);
+    cursor: pointer;
+    font-style: italic;
+ }

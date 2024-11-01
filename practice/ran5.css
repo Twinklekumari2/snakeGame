@@ -1,0 +1,143 @@
+body{
+    margin: 30px 30px 30px 30px;
+    padding: 0px;
+    background: url(https://images.freecreatives.com/wp-content/uploads/2016/04/Website-Backgrounds-For-Desktop.jpg);
+    background-size: cover;
+    border-color: blue;
+}
+
+
+.left{
+    margin: 25px 40px;
+    /* border: 1px solid red; */
+    display: inline-block;
+    /* width: 20%; */
+}
+.left img{
+    width: 60px;
+    height: 50px;
+    filter: invert(1000);
+    opacity: 60%;
+}
+.left img:hover{
+    /* filter: invert(1000); */
+    filter: drop-shadow(10px 10px 15px blue);
+}
+/* .heading{
+    margin-top: 20px;
+    border: 1px solid white;
+} */
+ .right{
+    /* border: 1px solid white; */
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    padding: 10px;
+    right: 40px;
+    width: 59%;
+ }
+ .right li{
+    list-style: none;
+    float: left;
+ }
+ .right li a{
+    /* float: left; */
+    text-decoration: none;
+    padding: 20px 20px;
+    font-size: 20px;
+    color: white;
+ }
+ .right li a:hover{
+    color: blue;
+    font-style: italic;
+ }
+ .btn{
+    float: right;
+    border-radius: 10px;
+    background-color:lightblue;
+    color: white;
+    font-size: 17px;
+    margin-right: 12px;
+    margin-bottom: 5px;
+    cursor: pointer;
+ }
+ .btn:hover{
+    text-transform: uppercase;
+    font-style: italic;
+    background-color: blue;
+ }
+ .container{
+    margin-left: 20vh;
+    font-size: 35px;
+    color: cadetblue;
+    /* border: 1px solid wheat; */
+    display: block;
+     width: 39%; 
+    /* margin-top: 10vh;  */
+ }
+ /* h1{ */
+    /* border: 1px white solid; */
+ /* } */
+ #h4{
+    color: lightseagreen;
+    padding: 0px;
+    margin: 0px;
+    /* border: 1px solid wheat; */
+    /* font-size: 20px; */
+    /* margin-bottom: 200px; */
+ }
+ #content{
+    font-size: 20px;
+    color: wheat;
+    font-weight: 100;
+    cursor: pointer;
+ }
+ #content:hover{
+    font-style: italic;
+    color: aquamarine;
+ }
+ #btn{
+    background-color: azure;
+    color: #000;
+    padding: 10px;
+    border-radius: 18px;
+    cursor: pointer;
+    width: 25%;
+    font-size: 15px;
+    transition: background-color 1s ease-in-out;
+    /* margin-right: 60px; */
+ }
+ #btn:hover{
+    background-color: lightseagreen;
+ }
+ .box{
+   display: block;
+   width: 40%;
+   height: 70%;
+   /* border: 1px solid wheat; */
+   position: absolute;
+   top: 25vh;
+   right: 200px;
+   /* background: url(https://cwpwp2.betterthanpaper.com/wp-content/uploads/2019/05/social-media-marketing.png);
+   background-size: cover; */
+   /* opacity: 40%; */
+ }
+  .box img{ 
+   width: 100%;
+   height: 100%;
+   opacity: 50%;
+   background-size: cover;
+ }
+ @media only screen and (max-width:800px){
+   .box img{
+      display: none;
+   }
+ }
+h2{
+   font-size: 40px;
+   width: 100%;
+   display: block;
+   margin: auto 100px;
+   /* opacity: 60%; */
+   color: white;
+}

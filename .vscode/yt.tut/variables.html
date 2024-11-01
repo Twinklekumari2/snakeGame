@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        --color:violet;
+        --background-color:pink;
+        --color1:red;
+    }
+    .container{
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--color);
+        height: 50vh;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .box{
+        background-color: var(--background-color);
+        border: 1px black solid;
+        width: 5vw;
+        height: 5vh;
+        padding: 3px;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 2px 3px 3px var(--color1);
+        /* box-shadow: -2px -3px var(--color1); */
+    }
+    #box-1:hover{
+        transform: rotateX(90deg);
+    }
+    #box-2:hover{
+       transition: blue 1s ease-in-out 0.5s;
+       transform: rotateX(70deg);
+    }
+</style>
+<body>
+    <div class="container">
+       <div class="box" id="box-1">twinkle</div>
+       <div class="box" id="box-2">twinkle</div>
+       <div class="box" id="box-3">little</div>
+       <div class="box" id="box-4">star</div>
+    </div>
+</body>
+</html>

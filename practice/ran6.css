@@ -1,0 +1,109 @@
+html,body{
+   /* height: 100%;
+   width: 100%; */
+   /* background-color: #fafafa; */
+   animation: background 4s ease-in-out 0s infinite forwards alternate;
+   margin: 0px;
+   padding: 0px;
+}
+@keyframes background{
+   0%{
+      background-image: url(https://i.pinimg.com/originals/00/0d/23/000d23271c44047ff439ff3a760529c0.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;      
+   }
+   25%{
+      background-image: url(https://www.hdwallpapers.in/download/landscape_of_mountain_green_hills_under_cloudy_blue_sky_4k_hd_nature-1080x1920.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+   50%{
+      background-image: url(https://png.pngtree.com/background/20230401/original/pngtree-nebula-blue-moon-stars-twinkling-background-picture-image_2235153.jpg);
+background-repeat: no-repeat;
+   background-size: cover;
+   }
+   75%{
+      background-image: url(https://wallpapercave.com/wp/wp4723676.jpg);
+background-repeat: no-repeat;
+   background-size: cover;
+   }
+   100%{
+      background-image: url(https://i.pinimg.com/originals/00/0d/23/000d23271c44047ff439ff3a760529c0.jpg);
+background-repeat: no-repeat;
+   background-size: cover;
+   }
+}
+h1{
+  position: absolute;
+  top: 20%;
+  /* margin: auto; */
+  left: 33%;
+  display: block;
+  font-size: xx-large;
+  font-family: cursive;
+  font-style: italic;
+  letter-spacing: 5px;
+  text-shadow: 5px 5px 5px yellow;
+}
+h1:hover{
+   text-shadow: 3px 4px 5px lightpink;
+   text-decoration:line-through;
+   background-color: lightcyan;
+   border-radius: 15px;
+   transition: all 1s ease-in-out;
+}
+.container{
+   display: flex;
+   position: absolute;
+   top: 42%;
+   left: 40%;
+   padding: 6px;
+   background: none;
+
+}
+.box{
+   /* border: 1px black solid; */
+   /* flex-direction: row; */
+   /* justify-content: space-between; */
+   width: 65px;
+   height: 300px;
+   background-color: lightskyblue;
+   box-shadow: 5px 3px 5px #fff;
+   border-radius: 20px;
+   margin: 5px;
+   background: none;
+   
+
+}
+.box:hover{
+   width: 200px;
+   height: 350px;
+   transform: translateZ(30deg);
+   transition: all 1s ease-in-out;
+}
+
+#box-1{
+   background-image: url(https://i.pinimg.com/originals/00/0d/23/000d23271c44047ff439ff3a760529c0.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#box-2{
+   background-image: url(https://www.hdwallpapers.in/download/landscape_of_mountain_green_hills_under_cloudy_blue_sky_4k_hd_nature-1080x1920.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#box-3{
+   background-image: url(https://png.pngtree.com/background/20230401/original/pngtree-nebula-blue-moon-stars-twinkling-background-picture-image_2235153.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#box-4{
+   background-image: url(https://wallpapercave.com/wp/wp4723676.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+@media only screen and (min-width =500px) and (max-width=800px){
+   h1{
+      font-size: large;
+   }
+}

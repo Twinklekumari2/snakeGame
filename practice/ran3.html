@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ran3.css">
+    <title>random3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+   <header>
+    <div class="logo">
+        ALPHINE
+        <!-- <div><img src="https://static.vecteezy.com/system/resources/previews/006/962/129/original/three-pines-tree-illustration-logo-free-vector.jpg"> </div> -->
+    </div>
+    <div class="navigation">
+        <ul>
+            <li a="#">TRAVELLER TYPE</li>
+            <li a="#">COUPLE</li>
+            <li a="#">PROGRAM</li>
+            <li a="#" id="MOUNTAINING">MOUNTAINING</li>
+            <li a="#">SET LOCATION</li>
+        </ul>
+    </div>
+   </header>
+
+   <div class="mountain">
+    <h1 id="heading">Mountain</h1>
+    <h1 id="sub-heading">climbing Trips & Tours</h1>
+    <button class="btn">
+        VIEW PROGRAM
+    </button>
+     <div class="content">
+        <h3 id="sub2-heading">ABOUT</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quod adipisci enim repudiandae blanditiis optio veritatis explicabo numquam aperiam impedit magnam, incidunt accusamus eum tempora? Quaerat accusamus deleniti porro non.</p>
+     </div>
+
+    </div>
+
+
+    <div class="aside">
+    <!--<i class="fas fa-search"></i> Font Awesome search icon -->
+    <input type="search" name="search" id="searchBar" placeholder="Search..." />
+    </div>
+
+    <div class="photogrid">
+
+    <div class="photobox" id="photo-1"></div>
+    <div class="photobox" id="photo-2"></div>
+    <div class="photobox" id="photo-3"></div>
+    <div class="photobox" id="photo-4"></div>
+    <div class="photobox" id="photo-5"></div>
+    <div class="photobox" id="photo-6"></div>
+    <div class="photobox" id="photo-7"></div>
+    <div class="photobox" id="photo-8"></div>
+    <div class="photobox" id="photo-9"></div>
+    <div class="photobox" id="photo-10"></div>
+    <div class="photobox" id="photo-11"></div>
+    <div class="photobox" id="photo-12"></div>
+    <div class="photobox" id="photo-13"></div>
+    <div class="photobox" id="photo-14"></div>
+    <div class="photobox" id="photo-15"></div>
+    </div>
+    
+
+    <script>
+        const placeholders =[
+            "Search loactions...",
+            "Find your favorite place...",
+            "Search for best guiders...",
+            "Search Routes..."
+        ];
+        let index = 0;
+        function changePlaceholder(){
+            const searchBar = document.getElementById("searchBar");
+            searchBar.placeholder = placeholders[index];
+            index = (index+1) % placeholders.length;
+        }
+        setInterval(changePlaceholder,2000);
+    </script>
+
+</body>
+</html>

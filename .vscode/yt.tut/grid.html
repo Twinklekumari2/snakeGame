@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+</head>
+<style>
+    .container{
+        display : grid;
+        grid-template-rows:4fr 5fr 6fr;
+        /* grid-auto-rows: 4fr; */
+        /* grid-template-columns: 300px 150px 110px 50px; */
+        grid-template-columns: repeat(8,auto);
+        background-image: url(../.vscode/pictures/IMG-20241009-WA0118.jpg);
+        grid-gap: 4px;
+    }
+    .item{
+        background-color: lime;
+        margin: 3px;
+        /* width: 100px;
+        height: 100px; */
+        border: 1px dotted black;
+        /* z-index: 1; */
+        padding: 23px;
+    }
+    .item:first-child{
+        grid-column-start: 3;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    input{
+        display: block;
+    }
+    #item-1{
+        display: flex;
+        justify-content: center;
+    }
+    #item-2{
+        background-color:red;
+        transition: background-color 2s ease-in-out;
+        /* transition: transform 1s ease; */
+        transform: rotate(30deg);
+    }
+    #item-2:hover{
+        background-color: yellow;
+    }
+    #item-3{
+        display: flex;
+        justify-content: center;
+    }
+    #item-4{
+        background-color: lightcoral;
+        position: relative;
+        animation: twinkle 2s ease forwards alternate infinite ;
+    }
+    @keyframes twinkle{
+        0%{
+            top:0px;
+            left:0px
+        }
+        50%{
+            top:50px;
+            left:0px;
+        }
+        100%{
+            left:50px;
+            top:50px;
+        }
+    }
+    img{
+        width: 150px;
+        height: 100px;
+    }
+    form{
+        border:1px double orchid;
+        background-color: lightpink;
+        padding: 56px;
+    }
+    table{
+        border-collapse:collapse;
+        border: 1px dashed purple;
+        background-color: blanchedalmond;
+    }
+    th,td{
+        border: 1px dashed orchid;
+        text-align: center;
+        padding: 5px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item" id="item-1">
+            <form action="backend.php" method="get">
+                <label for="username">username:</label>
+               <input type="text number" name="username" placeholder="enter your username">
+               <label for="password">password:</label>
+               <input type=" number text" name="password" placeholder="enter password">
+               <br>
+               <input type="submit">
+            </form>
+            form and input
+        </div>
+        <div class="item" id="item-2"> transition + transform
+        </div>
+        <div class="item" id="item-3">
+            <table>
+                <tr>
+                    <th>name</th>
+                    <th>class</th>
+                </tr>
+                <tr>
+                    <td>twinkle</td>
+                    <td>btech cse</td>
+                </tr>
+                <tr>
+                    <td>sahid</td>
+                    <td>bpharma</td>
+                </tr>
+            </table>
+            table
+        </div>
+        <div class="item" id="item-4">baabuuuu (animation) </div>
+        <div class="item" id="item-5">
+            <img src="https://wallpaperaccess.com/full/363554.jpg" alt="">
+            image
+            <!-- <img src="../.vscode/pictures/IMG-20241009-WA0120.jpg" alt=""> -->
+        </div>
+        <div class="item">this is item-6</div>
+        <div class="item">this is item-7</div>
+        <div class="item">this is item-8</div>
+        <div class="item">this is item-9</div> 
+        <div class="item">this is item-9</div> 
+        <div class="item">this is item-9</div> 
+        <div class="item">this is item-9</div> 
+        <div class="item">this is item-9</div> 
+        <div class="item">this is item-9</div> 
+        <div class="item">this is item-9</div> 
+        <div class="item">this is item-9</div> 
+    </div>
+</body>
+</html>

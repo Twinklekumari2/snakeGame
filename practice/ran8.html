@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>implementation of html css js</title>
+    <link rel="stylesheet" href="ran8.css">
+    <!-- <link rel="stylesheet" href="ran8.js"> -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li id="Home" onclick="toggleShow()">Home</li>
+                <li id="About" onclick="toggleshow()">About</li>
+                <li>Services</li>
+                <li>More</li>
+            </ul>
+            <div class="search">
+                <input type="search" placeholder="enter username">
+            </div>
+            <div class="search2" >
+                <button >GET STARTED</button>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <p id="home">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum architecto animi, iste quasi rerum unde, quae nostrum, voluptatibus natus ipsa nesciunt necessitatibus iure! Error perferendis, doloribus est minus ipsa repellat!
+            Similique maiores consequatur dolorem sed reprehenderit at eligendi quae reiciendis, eius eaque architecto fuga ipsum id, perferendis, illum cumque unde odit quis accusamus harum iste consequuntur? Mollitia commodi recusandae libero.
+            Veniam accusantium dolore reiciendis cupiditate iste. Corrupti, aspernatur! Delectus temporibus totam alias aperiam asperiores recusandae quod iure, accusantium rerum quo sapiente quae nisi? Quos dolores, cum recusandae natus nostrum expedita?
+            Maiores dolorem voluptatibus quam ipsa porro ad voluptates, quibusdam debitis eaque Et, provident voluptas molestiae dolore praesentium similique, q sapiente repellat quia sint excepturi expedita blanditiis nostrum magni porro dolorum. Rerum, delectus nemo?
+        </p>
+    </section>
+    <section>
+        <p id="about">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid repudiandae ratione accusamus totam quasi ut, doloribus quos voluptas nam quam quibusdam amet placeat porro delectus, at eaque? Rem, voluptatum suscipit?
+            Blanditiis modi, dolore, recusandae praesentium laboriosam ab ullam omnis enim quidem reprehenderit optio eveniet! Tempora vel ipsum alias animi natus, recusandae nihil temporibus officiis assumenda! Maiores rem ex accusamus facere!
+        </p>
+        <section>
+            <div class="container">
+                <div class="item" id="item-1">yoo</div>
+                <div class="item" id="item-2" onclick="alert('dont touch')">
+                    <img src="../.vscode/pictures/IMG-20241009-WA0122.jpg" alt="">
+                </div>
+                <div class="item">time now is <span id="time"></span></div>
+                <div class="item">yoo</div>
+                <div class="item">yoo</div>
+            </div>
+        </section>
+    </section>
+    <script>
+        function toggleShow(){
+    let Home=document.getElementById('Home');
+    let home=document.getElementById('home');
+    if(home.style.display!='none'){
+        home.style.display='none';
+        // home.style.backgroundColor='white';
+    }
+    else{
+        home.style.display='block';
+    }
+    }
+        function toggleshow(){
+    let About=document.getElementById('About');
+    let about=document.getElementById('about');
+    if(about.style.display!='none'){
+        about.style.display='none';
+    }
+    else{
+        about.style.display='block';
+    }
+    }
+    function greet(name){
+        console.log("hello good morning " + name);
+    }
+    //  timeOut=setTimeout(greet,3000,"twinkle");   //first argument is function name and 2nd is time in 
+    //  console.log(timeOut);
+    //  clearTimeout(timeOut)
+
+    // let about=document.getElementById('about');
+    // addEventListener('mouseover',function run(){
+    //     alert("mouse inside");
+    // })
+    setInterval(greet,4000,"twinkle");
+    function displayTime(){
+        time=new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML=time;
+    }
+    setInterval(displayTime,1000);
+    </script>
+</body>
+</html>

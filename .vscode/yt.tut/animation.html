@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: yellow;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .box{
+        background-color: pink;
+        height: 100px;
+        width: 100px;
+        position: relative;
+        animation: twinkle 15s ease-in-out 0.5s 5 forwards ;
+        transition: all 2s ease-in-out 0.1s;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 5px;
+    }
+    .box:hover{
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        background-color: lightseagreen;
+        transform: translate(200px,200px);
+        transform: rotate(360deg);
+    }
+    @keyframes twinkle{
+       0%{
+        top: 0px;
+        left: 0px;
+       }
+       10%{
+        top: 250px;
+        left: 0px;
+       }
+       20%{
+        top: 250px;
+        left: 250px;
+       }
+       30%{
+        top: 0px;
+        left: 250px;
+       }
+       40%{
+        top: 0px;
+        left: 500px;
+       }
+       50%{
+        top: 250px;
+        left: 500px;
+       }
+       60%{
+        top: 250px;
+        left: -250px;
+       }
+       70%{
+        top: 0px;
+        right:250px;
+       }
+       80%{
+        top: 0px;
+        left: 0px;
+       }
+       90%{
+        top: 0px;
+        left: 250px;
+       }
+       100%{
+        top: 250px;
+        right: 0px;
+       }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            yo... twinkle!!
+        </div>
+    </div>
+</body>
+</html>

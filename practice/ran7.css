@@ -1,0 +1,252 @@
+body{
+    background-image: url(../.vscode/pictures/sahid.jpg);
+}
+header{
+    background-image: url(../.vscode/pictures/sahid.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    width: 100vw;
+}
+ul{
+    display: flex;
+}
+.navbar ul li{
+    margin: 5px;
+    padding: 8px;
+    list-style: none;
+    color: whitesmoke;
+    border: 1px white solid;
+    border-radius: 34px;
+    background-color: rgb(180, 178, 178);
+    transition: background-color 0.5s ease-in-out;
+}
+.navbar ul li:hover{
+    background-color: wheat;
+}
+.c{ 
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
+    animation: color 3s ease 0s infinite both alternate;
+}
+@keyframes color{
+    0%{
+        /* background-color: rgb(255, 3, 3); */
+        background-image: url(../.vscode/pictures/IMG-20241009-WA0118.jpg);
+    }
+    10%{
+        /* background-color: rgb(255, 4, 146); */
+        background-image: url(../.vscode/pictures/IMG-20241009-WA0124.jpg);
+    }
+    20%{
+        /* background-color: rgb(89, 7, 111); */
+        background-image: url(../.vscode/pictures/IMG-20241009-WA0119.jpg);
+    }
+    30%{
+        /* background-color: rgb(52, 6, 109); */
+        background-image: url(../.vscode/pictures/IMG-20241009-WA0120.jpg);
+    }
+    40%{
+        /* background-color: rgb(38, 4, 160); */
+        background-image: url(../.vscode/pictures/IMG-20241009-WA0121.jpg);
+    }
+    50%{
+        /* background-color: rgb(15, 101, 221); */
+        background-image: url(../.vscode/pictures/IMG-20241009-WA0122.jpg);
+    }
+    60%{
+        /* background-color: rgb(5, 217, 192); */
+        background-image: url(../.vscode/pictures/IMG-20241009-WA0123.jpg);
+    }
+    70%{
+        /* background-color: rgb(7, 222, 46); */
+        background-image: url(../.vscode/pictures/IMG-20241009-WA0125.jpg);
+    }
+    80%{
+        /* background-color: rgb(109, 185, 8); */
+        background-image: url(../.vscode/pictures/IMG-20241009-WA0126.jpg);
+    }
+    90%{
+        /* background-color: rgb(227, 223, 10); */
+        background-image: url(../.vscode/pictures/IMG-20241009-WA0127.jpg);
+    }
+    100%{
+        /* background-color: rgb(242, 43, 8); */
+        background-image: url(../.vscode/pictures/IMG-20241009-WA0128.jpg);
+    }
+}
+.box{
+    width: 60px;
+    height: 60px;
+    border: 1px black solid;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px;
+    /* background-color: rgb(255, 0, 0); */
+    background-image: url(sahid.jpg);
+    color: white;
+    font-size: 20px;
+}
+#box-1{
+    /* background-color: rgb(255, 255, 255); */
+    /* transform: rotate(0deg); */
+    animation: sahid 7s ease-in-out 0s infinite forwards alternate;
+    /* transition: 1s ease-in-out; */
+}
+    /* @keyframes sahid{
+        0%{
+        top: 0px;
+    }
+    20%{
+        top: 170px;
+    }
+    40%{
+        bottom: 100px;
+    }
+    60%{
+        top: 150px;
+    }
+    70%{
+        left: 0px;
+        bottom: 100px;
+    }
+    80%{
+        top: 10px;
+        left: 220px;
+    }
+    100%{
+        top: 0px;
+    }
+} */
+@keyframes sahid{
+    0%{
+       transform: translate(0px,0px);
+    }
+    20%{
+        transform: translateX(-220px);
+    }
+    40%{
+        transform: translate(-220px,-320px);
+    }
+    60%{
+        transform: translate(1205px,-320px);
+        /* transform: skew(30deg,0deg); */
+    }
+    80%{
+        transform: translate(1205px,0px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+#box-1:hover{
+    background-color: rgb(255, 217, 0);
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+    border-radius: 70%;
+}
+#box-2{
+    /* background-color: rgb(252, 252, 252); */
+    animation: sahid1 7s ease-in-out 0s infinite forwards alternate;
+}
+@keyframes sahid1{
+    0%{
+        transform: translate(0px);
+    }
+    20%{
+        transform: translateX(-420px);
+    }
+    40%{
+        transform: translate(-420px,-320px);
+    }
+    60%{
+        transform: translate(780px,-320px);
+    }
+    80%{
+        transform: translate(780px,0px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+#box-3{
+    animation: sahid2 7s ease-in-out 0s infinite forwards alternate;
+    /* background-color: rgb(255, 255, 255); */
+}
+@keyframes sahid2{
+    0%{
+        transform: translate(0px,0px);
+    }
+    20%{
+        transform: translateX(-650px);
+    }
+    40%{
+        transform: translate(-650px,-320px);
+    }
+    60%{
+        transform: translate(560px,-320px);
+    }
+    80%{
+        transform: translate(560px,0px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+#box-4{
+    animation: sahid3 7s ease-in-out 0s infinite forwards alternate;
+    /* background-color: rgb(252, 252, 252); */
+}
+@keyframes sahid3{
+    0%{
+        transform: translate(0px,0px);
+    }
+    20%{
+        transform: translateX(-860px);
+    }
+    40%{
+        transform: translate(-860px,-320px);
+    }
+    60%{
+        transform: translate(340px,-320px);
+    }
+    80%{
+        transform: translate(340px,0px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+#box-5{
+    animation: sahid4 7s ease-in-out 0s infinite forwards alternate;
+    /* background-color: rgb(255, 255, 255); */
+}
+@keyframes sahid4{
+    0%{
+        transform: translate(0px,0px);
+    }
+    20%{
+        transform: translateX(-1100px);
+    }
+    40%{
+        transform: translate(-1100px,-320px);
+    }
+    60%{
+        transform: translate(0px,-320px);
+    }
+    80%{
+        transform: translate(0px,0px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+.content p{
+    color: rgb(255, 255, 255);
+}

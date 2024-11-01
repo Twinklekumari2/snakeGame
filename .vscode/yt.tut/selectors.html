@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        justify-content: center;
+        display: block;
+        border: 1px solid black;
+        width: 50%;
+        margin: auto;
+
+    }
+    li:nth-child(even){
+        background-color: yellowgreen;
+    }
+    #para{
+        width: 50%;
+        border: 1px dotted blue;
+        margin: auto;
+    }
+    input{
+        display: block;
+        justify-content: center;
+        margin: auto;
+    }
+    input[type='number']{
+        /* color: blue; */
+        border: rgb(83, 42, 84) solid 1px;
+        background-color: rgb(223, 193, 198);
+        padding: 5px;
+    }
+</style>
+<body>
+    <div class="container">
+        <p>hey first para</p>
+        <div>
+            <form action="" class="form">
+                <input type="text" placeholder="enter your name">
+                <input type="number" placeholder="enter your pswd">
+                <input type="search" placeholder="search anything">
+                <input type="submit" value="submit">
+            </form>
+            <p>hey second para</p>
+            <ul>
+                <li class="item" id="item-1">hey 4th para</li>
+                <li class="item" id="item-2">first</li>
+                <li class="item" id="item-3">second</li>
+                <li class="item" id="item-4">third</li>
+                <li class="item" id="item-5">forth</li>
+                <li class="item" id="item-6">fifth</li>
+                <li class="item" id="item-7">sixth</li>
+                <li class="item" id="item-8">seventh</li>
+                <li class="item" id="item-9">eightth</li>
+                <li class="item" id="item-10"> <p>hey 3rd para </p> </li>
+            </ul>
+        </div>
+    </div>
+    <p id="para">hey i am last</p>
+</body>
+</html>

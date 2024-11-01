@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ran5.css">
+    <title>random5</title>
+</head>
+<body>
+        <div class="left">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.ieqB4ZBtErQ5Cwtw85qkcQHaEv&pid=Api&P=0&h=220" alt="">
+        <!-- <img src="https://static.vecteezy.com/system/resources/previews/000/403/516/original/modern-company-logo-design-vector.jpg" alt=""> -->
+    </div>
+    <div class="right">
+        <header class="heading">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <button class="btn" >
+                    GET STARTED
+                    
+                </button>
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+        <h1>Web <br> Design </h1>
+        <p id="h4">LANDING PAGE</p>
+        <p id="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, molestiae eligendi. Libero eos aliquam officiis aperiam error minima, facere, vitae architecto natus tenetur accusantium vero repudiandae. Corrupti labore nihil expedita perspiciatis, cumque quibusdam dignissimos nostrum excepturi atque maiores cum facilis?</p>
+        <button id="btn" onclick="toggleHide()">
+            LEARN MORE
+        </button>
+    </div>
+    <div class="box">
+       <!-- <h2> Yo... <br> Twinkle here</h2> -->
+        <img src="https://cwpwp2.betterthanpaper.com/wp-content/uploads/2019/05/social-media-marketing.png" alt="">
+    </div>
+    <script>
+        let content=document.getElementById('content');
+        content.addEventListener('mouseover',function run(){
+          console.log("mouse inside");
+        });
+        content.addEventListener('mouseout',function run(){
+            console.log("mouse went outside");
+        })
+        function toggleHide(){
+        let btn=document.getElementById('btn');
+        let content=document.getElementById('content');
+        if(content.style.display!='none'){
+            content.style.display='none';
+        }
+        else{
+            content.style.display='block';
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+        <nav class="navbar">
+            <h3>ALPHINE</h3>
+            <div class="nav-part2">
+                <ul>
+                    <li>TRAVELLERS</li>
+                    <li>COUPLE</li>
+                    <li id="MOUNTAINING">MOUNTAINING</li>
+                    <li>PROGRAM</li>
+                    <li>SET LOCATION</li>
+                </ul>
+                <i class="ri-menu-3-line" onclick="toggleHide()"></i>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="left">
+               <h2>Mountain<br><span>climbing Trips & Tours</span></h2>
+               <button class="btn">
+                VIEW PROGRAM
+               </button>
+               <p id="content"> <strong>View in Landscape mode for better view</strong>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi tempora optio facere alias, commodi, debitis odio est earum id suscipit fugiat accusantium iusto in provident iure qui eveniet minus Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor similique, illo ipsam nam numquam quisquam voluptates itaque exercitationem distinctio ad. Iure sequi non maiores repudiandae, iste itaque earum unde officiis! <br>
+                <p  class="RULES" id="RULES"><strong>RULES AND REGULAITON REGARDING TOURS & TRIPS.</strong>
+                <ul class="RULES">
+                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                </ul>
+                </p>
+            </p>
+            </div>
+            <div class="right">
+                <input type="search" placeholder="Search..." id="searchBar">
+                <div class="photobox">
+                   <div class="photogrid" id="photogrid-1"></div>
+                   <div class="photogrid" id="photogrid-2"></div>
+                   <div class="photogrid" id="photogrid-3"></div>
+                   <div class="photogrid" id="photogrid-4"></div>
+                   <div class="photogrid" id="photogrid-5"></div>
+                   <div class="photogrid" id="photogrid-6"></div>
+                   <div class="photogrid" id="photogrid-7"></div>
+                   <div class="photogrid" id="photogrid-8"></div>
+                   <div class="photogrid" id="photogrid-9"></div>
+                   <div class="photogrid" id="photogrid-10"></div>
+                   <div class="photogrid" id="photogrid-11"></div>
+                   <div class="photogrid" id="photogrid-12"></div>
+                   <div class="photogrid" id="photogrid-13"></div>
+                   <div class="photogrid" id="photogrid-14"></div>
+                   <div class="photogrid" id="photogrid-15"></div>
+                </div>
+            </div>
+        </div>
+</body>
+
+<script>
+    function toggleHide(){
+
+        let navbar = document.querySelector('.nav-part2 ul');
+        let i = document.querySelector('.nav-part2 i');
+        if(navbar.style.display != 'none'){
+            navbar.style.display = 'none';
+        }
+        else{
+            navbar.style.display = 'block';
+        }
+    }
+    const placeholders = [
+        "Search location...",
+        "Search guiders...",
+        "Find best routes...",
+        "find Images or Videos..."
+    ];
+    let index = 0;
+    function changePlaceholder(){
+        const searchBar = document.getElementById("searchBar");
+        searchBar.placeholder = placeholders[index];
+        index = (index + 1) % placeholders.length;
+    }
+    setInterval(changePlaceholder , 2000);
+</script>
+</html>
