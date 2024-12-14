@@ -49,7 +49,7 @@ console.log(dest2);
 //normal clone  --> isse clone ke badle copy hota hai...
 
 let a = {
-    name:"sahid",
+    name:"shona",
     age:23,
     height:122
 }

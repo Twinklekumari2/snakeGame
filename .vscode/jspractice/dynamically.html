@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Dynamically loading content</h1>
+        <p id="output">waiting for the script to load...</p>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded",function(){
+        console.log("DOM fully loaded. adding script dynamically..");
+
+        const script = document.createElement("script");
+        script.src = "dynamic-script.js";
+        script.async = true;
+        script.onload = function(){
+            console.log("Dynamic script loaded successfully");
+        };
+        script.onerror = function(){
+            console.log("Error loading the dynamic script.");
+        };
+
+        document.body.appendChild(script);
+        
+    });
+</script>
+</html>

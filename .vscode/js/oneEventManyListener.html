@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>First para</p>
+        <p>Second para</p>
+        <p>Third para</p>
+        <p>Forth para</p>
+    </div>
+</body>
+<script>
+    console.log("hi");
+    let paras = document.querySelectorAll('p');
+    function listener(event){
+        alert("you have clicked on:" + event.target.textContent);
+    }
+    for(let i = 0 ; i < paras.length ; i++){
+        let para = paras[i];
+        para.addEventListener('click',listener);
+    }
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p id="message">
+           this is original message.
+        </p>
+        <button id="textChangeBtn">
+           text change
+        </button>
+    </div>
+</body>
+<script>
+    function DOM(){
+        console.log("DOM fully loaded and parsed!");
+    }
+    document.addEventListener("DOMContentLoaded", DOM);
+
+    const btn = document.getElementById("textChangeBtn");
+    const msg = document.getElementById("message");
+    
+    function changeText(event){
+        msg.textContent = "the text is fully changed";
+    }
+    btn.addEventListener('click', changeText);
+
+    // Dynamically script added by DOMContentLoaded: 
+
+    document.addEventListener("DOMContentLoaded", function() {
+            const script = document.createElement('script');
+            script.src = "JS file";
+            script.async = true; 
+    
+            document.body.appendChild(script);
+
+            console.log('Script from code help added dynamically after DOM is loaded.');
+    });
+</script>
+</html>

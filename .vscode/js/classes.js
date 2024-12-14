@@ -15,7 +15,7 @@ class Human{
         console.log("i am running");
     }
 
-    //getetr and setter ==>class ke ander hi lagate hai taki private value ko access kar sake...
+    //getter and setter ==>class ke ander hi lagate hai taki private value ko access kar sake...
     //get and set is also a function type bs aage get & set keyword lagana hota hai
     //get is used to access or return the private value
 

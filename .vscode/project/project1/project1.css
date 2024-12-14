@@ -1,0 +1,220 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.cont{
+    color: white;
+    height: 60vh;
+    background-image: url(http://images.unsplash.com/photo-1496412705862-e0088f16f791?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    z-index: 1;
+}
+.navbar{
+   background-color: rgb(255, 255, 255);
+   height: 10vh;
+   z-index: 1;
+   opacity: 0.3;
+}
+.container{
+    display: flex;
+}
+#logo{
+    position: relative;
+    top: 15px;
+    left: 5vw;
+    width: 5vh;
+    height: 5vh;
+    /* z-index: 1; */
+    background-image: url(https://cdn.pixabay.com/photo/2020/06/29/10/55/pizza-5352320_1280.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+#nav{
+    position: absolute;
+    top: 0px;
+    left: 8vw;
+    width: 25vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
+ul{
+    display: flex;
+    opacity: 1;
+    z-index: 1;
+
+}
+li{
+    list-style: none;
+    padding: 10px;
+}
+li a{
+    text-decoration: none;
+}
+li a:hover{
+    border: hidden ;
+    background-color: white;
+    border-radius: 10px;
+    /* z-index: 1; */
+    color: black;
+    width: 5vw;
+}
+.container2{
+    /* border: 1px solid blue; */
+    height: 35vh;
+    /* padding: 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 30px;
+    font-style: normal;
+}
+#para{
+    width: 85vw;
+    align-items: center;
+    margin: 4vh auto;
+    justify-content: center;
+}
+button{
+    width: 5vw;
+    height: 28px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: rgb(71, 219, 214);
+}
+button:hover{
+    background-color: rgb(46, 164, 214);
+}
+
+.services{
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.container3{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+}
+#h2{
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    /* border: 1px black solid; */
+    width: 30vw;
+    position: relative;
+    left: 41vw;
+    height: 5vh;
+
+}
+.boxx{
+    border: 3px black solid;
+    width: 26vw;
+    height: 30vh;
+    border-radius: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+}
+.boxx:hover{
+    background-color: rgb(242, 218, 222);
+}
+.services .boxx img{
+    height: 100px;
+    width: 100px;
+    /* display: block; */
+    position: relative;
+    left: 10vw;
+    top: 10px;
+    /* position: relative; */
+    animation: image 3s ease-out 0s infinite forwards;
+}
+@keyframes image{
+   0%{
+        left: 0px;
+    }
+    50%{
+        left:-10px;
+    }
+}
+.secondary-heading{
+    width: 10vw;
+    position: relative;
+    left: 9vw;
+    /* border: 1px black solid; */
+    /* margin: 4px; */
+    padding: 5px;
+}
+.secondary-heading:hover{
+    color: red;
+    font-style: oblique;
+}
+.content{
+   padding: auto;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* border: 1px red solid; */
+   width: 24vw;
+}
+.company{
+    height: 50vh;
+    border: 1px black solid;
+    background-image: url(https://wallpapercave.com/wp/wp7720970.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* display: flex; */
+}
+.secondary_heading{
+    width: 30vw;
+    /* border: 1px solid red; */
+    position: relative;
+    left: 34vw;
+    top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container4{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px green solid; */
+    position: relative;
+    top: 18vh;
+}
+.boxxx{
+    width: 140px;
+    height: 130px;
+    /* border: 1px blue solid; */
+    /* display: flex; */
+}
+.company .boxxx img{
+    width: 140px;
+    height: 120px;
+    background-size: cover;
+}
+.boxxx a{
+    display: flex;
+    align-items: center;
+    width: 80px;
+    /* border: 1px green solid; */
+    position: relative;
+    left: 24px;
+
+}
+footer{
+    width: 100vw;
+    height: 11vh;
+    border: 1px solid aqua;
+}

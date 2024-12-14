@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #div{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .div{
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: lightblue;
+
+    }
+</style>
+<body>
+    <div id="div">
+        <div class="div" id="div-1">1st</div>
+        <div class="div" id="div-2">2nd</div>
+        <div class="div" id="div-3">3rd</div>
+        <div class="div" id="div-4">4t</div>
+        <div class="div" id="div-5">5th</div>
+        <div class="div" id="div-6">6th</div>
+        <div class="div" id="div-7">7th</div>
+        <div class="div" id="div-8">8th</div>
+        <div class="div" id="div-9">9th</div>
+        <div class="div" id="div-10">10th</div>
+        <div class="div" id="div-11">11th</div>
+        <div class="div" id="div-12">12th</div>
+        <div class="div" id="div-13">13th</div>
+        <div class="div" id="div-14">14th</div>
+        <div class="div" id="div-15">15th</div>
+    </div>
+    
+</body>
+<script>
+    let myDiv = document.getElementById("div");
+    function onclick(event){
+        if(event.target.textContent !== '4t'){
+            confirm("you have clicked on:" + event.target.textContent);
+        }
+    }
+    myDiv.addEventListener('click',onclick);
+</script>
+</html>
